@@ -1,0 +1,47 @@
+/* teaser */
+
+#teaser {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+#teaser-text {
+    position: relative;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.teaser-text-animation {
+    display: none;
+    text-align: right;
+    clear: both;
+}
+
+.teaser-text-animation.active {
+    display: inline-block;
+}
+
+.teaser-text-animation:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.teaser-text-animation span {
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 0;
+    float: left;
+}
+
+.teaser-text-animation .teaser-normal {
+    color: black;
+}
+
+.teaser-text-animation .teaser-highlight {
+    color: red;
+}
